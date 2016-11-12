@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+header {
+  padding-top: 20px;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+#departureSuggestions, #destinationSuggestions {
+  font-family: 'Patrick Hand', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.suggested-departure-station, .suggested-destination-station {
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+#error-message {
+  font-family: 'Patrick Hand', sans-serif;
+  color: red;
+  opacity: 0.8;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+#pizza-locations {
+
+}
+
+
+.table-row {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.table-item {
+  display: inline-block;
+  width: 25%;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.headers {
+  font-size: 1.15em;
+  font-family: 'Actor', sans-serif;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+#offline {
+  color: red;
+  font-family: 'Actor', sans-serif;
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+.suggested-departure-station:hover, .suggested-destination-station:hover {
+  background: rgba(211, 211, 211, 0.2);
+  cursor: pointer;
+}
+
+#search {
+  width: 95%;
+  padding-left: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+input[type="text"], select, input {
+  border: solid 1px black;
+  height: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
+select {
+  height: 30px;
+  width: 320px;
+  padding: 30px;
+  font-style: "Arial";
+}
+
+#pizza-container {
+  margin: 50px 0px;
+  img {
+    width: 150px;
+  }
+}
+
+#pizza-locations {
+  margin: 50px;
+
+  .location {
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 14px;
+
+    .location-name {
+      color: black;
+      font-size: 20px;
+    }
+  }
+}
+
+.pizza-button {
+  padding: 15px;
+  background: #faf8d2;
+  border: solid 2px #fed070;
+  font-size: 18px;
+  border-radius: 3px;
+  border-bottom: solid 3px #fed070;
+  color: black;
+}
+
+.pizza-spin {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

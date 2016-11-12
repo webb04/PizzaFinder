@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Pizza Finder</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Link to Web App Manifest for Chrome -->
+      <link rel="manifest" href="./manifest.json">
+      <meta name="theme-color" content="#fed070">
+
+      <!-- Favicons and Touch Icons -->
+      <link rel="icon" type="image/png" sizes="16x16" href="./img/icon16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./img/icon32.png">
+      <link rel="icon" type="image/png" sizes="48x48" href="./img/icon48.png">
+      <link rel="icon" type="image/png" sizes="128x128" href="./img/icon128.png">
+      <link rel="icon" type="image/png" sizes="256x256" href="./img/icon256.png">
+
+      <!-- Add to home screen for Safari on iOS -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="apple-mobile-web-app-title" content="PFinder">
+      <link rel="apple-touch-icon" sizes="152x152" href="./img/icon152.png">
+
+      <!-- Tile Icon for Windows-->
+      <meta name="msapplication-TileColor" content="#fed070">
+      <meta name="msapplication-TileImage" content="./img/icon144.png">
+
+      <link href='https://fonts.googleapis.com/css?family=Lato|Actor|Patrick+Hand' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <header class="main-header">
+        <h1 id="title">Pizza Finder</h1>
+      </header>
+      <!-- <div id="search">
+        <input id="departure" onKeyup="departureStationLookup()" type="text" placeholder="From" autofocus></input>
+        <div id="departureSuggestions"></div>
+        <br>
+        <input id="destination" onKeyup="destinationStationLookup()" type="text" placeholder="To"></input>
+        <div id="destinationSuggestions"></div>
+        <br>
+        <div id="error-message"></div>
+      </div> -->
+      <div id="pizza-container">
+        <img src="./img/pizza.png"/>
+      </div>
+      <button class="pizza-button">Determining location...</button>
+
+      <div id="pizza-locations"></div>
+      <script src="js/all.js"></script>
+      <script>
+        navigator.serviceWorker.register("/sw.js").then(
+          function() {
+            console.log("service worker registered");
+          });
+      </script>
+    </body>
+</html>
